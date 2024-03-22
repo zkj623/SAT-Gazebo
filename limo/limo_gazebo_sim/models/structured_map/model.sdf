@@ -1,0 +1,556 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='structured_map'>
+    <static>true</static>
+    <link name='link'>
+      <collision name='collision_parquet2'>
+      
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>10 10</size>
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='visual_parquet2'>
+        <pose>5 5 0 0 0 0</pose>
+
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>10 10</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://floor_parquet2/materials/scripts</uri>
+            <uri>model://floor_parquet2/materials/textures</uri>
+            <name>vrc/parquet2</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <pose>0 0 0 0 0 0</pose>      
+      <link name="obs1">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物1的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 1.0 0</point>
+              <point>0.2 1.2 0</point>
+              <point>1.0 1.2 0</point>
+              <point>1.0 1.0 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物1的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 1.0 0</point>
+              <point>0.2 1.2 0</point>
+              <point>1.0 1.2 0</point>
+              <point>1.0 1.0 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs2">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物2的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>4.0 0.2 0</point>
+              <point>4.0 1.6 0</point>
+              <point>2.2 1.6 0</point>
+              <point>2.2 1.8 0</point>
+              <point>4.2 1.8 0</point>
+              <point>4.2 0.2 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物2的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>4.0 0.2 0</point>
+              <point>4.0 1.6 0</point>
+              <point>2.2 1.6 0</point>
+              <point>2.2 1.8 0</point>
+              <point>4.2 1.8 0</point>
+              <point>4.2 0.2 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs3">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物3的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>1.6 8.4 0</point>
+              <point>1.6 9.8 0</point>
+              <point>1.8 9.8 0</point>
+              <point>1.8 8.4 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物3的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>1.6 8.4 0</point>
+              <point>1.6 9.8 0</point>
+              <point>1.8 9.8 0</point>
+              <point>1.8 8.4 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs4">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物4的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>3.2 5.6 0</point>
+              <point>3.2 6.8 0</point>
+              <point>2.0 6.8 0</point>
+              <point>2.0 7.0 0</point>
+              <point>3.2 7.0 0</point>
+              <point>3.2 8.2 0</point>
+              <point>3.4 8.2 0</point>
+              <point>3.4 7.0 0</point>
+              <point>4.6 7.0 0</point>
+              <point>4.6 6.8 0</point>
+              <point>3.4 6.8 0</point>
+              <point>3.4 5.6 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物4的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>3.2 5.6 0</point>
+              <point>3.2 6.8 0</point>
+              <point>2.0 6.8 0</point>
+              <point>2.0 7.0 0</point>
+              <point>3.2 7.0 0</point>
+              <point>3.2 8.2 0</point>
+              <point>3.4 8.2 0</point>
+              <point>3.4 7.0 0</point>
+              <point>4.6 7.0 0</point>
+              <point>4.6 6.8 0</point>
+              <point>3.4 6.8 0</point>
+              <point>3.4 5.6 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs5">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物5的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>7.4 0.8 0</point>
+              <point>7.2 0.8 0</point>
+              <point>7.2 1.6 0</point>
+              <point>6.0 1.6 0</point>
+              <point>6.0 1.8 0</point>
+              <point>7.2 1.8 0</point>
+              <point>7.2 2.6 0</point>
+              <point>7.4 2.6 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物5的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>7.4 0.8 0</point>
+              <point>7.2 0.8 0</point>
+              <point>7.2 1.6 0</point>
+              <point>6.0 1.6 0</point>
+              <point>6.0 1.8 0</point>
+              <point>7.2 1.8 0</point>
+              <point>7.2 2.6 0</point>
+              <point>7.4 2.6 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs6">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物6的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>9.8 2.6 0</point>
+              <point>8.4 2.6 0</point>
+              <point>8.4 3.8 0</point>
+              <point>8.6 3.8 0</point>
+              <point>8.6 2.8 0</point>
+              <point>9.8 2.8 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物6的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>9.8 2.6 0</point>
+              <point>8.4 2.6 0</point>
+              <point>8.4 3.8 0</point>
+              <point>8.6 3.8 0</point>
+              <point>8.6 2.8 0</point>
+              <point>9.8 2.8 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs7">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物7的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>9.8 8.6 0</point>
+              <point>8.8 8.6 0</point>
+              <point>8.8 8.8 0</point>
+              <point>9.8 8.8 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物7的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>9.8 8.6 0</point>
+              <point>8.8 8.6 0</point>
+              <point>8.8 8.8 0</point>
+              <point>9.8 8.8 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs8">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物8的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>6.6 3.2 0</point>
+              <point>4.0 3.2 0</point>
+              <point>4.0 3.4 0</point>
+              <point>5.2 3.4 0</point>
+              <point>5.2 4.6 0</point>
+              <point>4.0 4.6 0</point>
+              <point>4.0 4.8 0</point>
+              <point>5.4 4.8 0</point>
+              <point>5.4 3.4 0</point>
+              <point>6.6 3.4 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物8的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>6.6 3.2 0</point>
+              <point>4.0 3.2 0</point>
+              <point>4.0 3.4 0</point>
+              <point>5.2 3.4 0</point>
+              <point>5.2 4.6 0</point>
+              <point>4.0 4.6 0</point>
+              <point>4.0 4.8 0</point>
+              <point>5.4 4.8 0</point>
+              <point>5.4 3.4 0</point>
+              <point>6.6 3.4 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs9">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物9的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>8.2 6.4 0</point>
+              <point>6.4 6.4 0</point>
+              <point>6.4 7.6 0</point>
+              <point>6.6 7.6 0</point>
+              <point>6.6 6.6 0</point>
+              <point>8.0 6.6 0</point>
+              <point>8.0 7.6 0</point>
+              <point>8.2 7.6 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物9的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>8.2 6.4 0</point>
+              <point>6.4 6.4 0</point>
+              <point>6.4 7.6 0</point>
+              <point>6.6 7.6 0</point>
+              <point>6.6 6.6 0</point>
+              <point>8.0 6.6 0</point>
+              <point>8.0 7.6 0</point>
+              <point>8.2 7.6 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs10">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物10的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>7.2 8.6 0</point>
+              <point>7.2 9.8 0</point>
+              <point>7.4 9.8 0</point>
+              <point>7.4 8.6 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物10的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>7.2 8.6 0</point>
+              <point>7.2 9.8 0</point>
+              <point>7.4 9.8 0</point>
+              <point>7.4 8.6 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs11">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物11的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 0.0 0</point>
+              <point>0.0 0.0 0</point>
+              <point>0.0 10.0 0</point>
+              <point>10.0 10.0 0</point>
+              <point>10.0 9.8 0</point>
+              <point>0.2 9.8 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物11的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 0.0 0</point>
+              <point>0.0 0.0 0</point>
+              <point>0.0 10.0 0</point>
+              <point>10.0 10.0 0</point>
+              <point>10.0 9.8 0</point>
+              <point>0.2 9.8 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      <link name="obs12">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物12的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>10.0 0.0 0</point>
+              <point>0.2 0.0 0</point>
+              <point>0.2 0.2 0</point>
+              <point>9.8 0.2 0</point>
+              <point>9.8 9.8 0</point>
+              <point>10.0 9.8 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物12的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>10.0 0.0 0</point>
+              <point>0.2 0.0 0</point>
+              <point>0.2 0.2 0</point>
+              <point>9.8 0.2 0</point>
+              <point>9.8 9.8 0</point>
+              <point>10.0 9.8 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs13">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物13的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 4.0 0</point>
+              <point>0.2 4.2 0</point>
+              <point>1.8 4.2 0</point>
+              <point>1.8 5.4 0</point>
+              <point>2.0 5.4 0</point>
+              <point>2.0 2.8 0</point>
+              <point>1.8 2.8 0</point>
+              <point>1.8 4.0 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物13的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>0.2 4.0 0</point>
+              <point>0.2 4.2 0</point>
+              <point>1.8 4.2 0</point>
+              <point>1.8 5.4 0</point>
+              <point>2.0 5.4 0</point>
+              <point>2.0 2.8 0</point>
+              <point>1.8 2.8 0</point>
+              <point>1.8 4.0 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs14">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物14的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>4.6 8.0 0</point>
+              <point>4.4 8.0 0</point>
+              <point>4.4 9.0 0</point>
+              <point>4.6 9.0 0</point>
+              <point>4.6 8.6 0</point>
+              <point>5.8 8.6 0</point>
+              <point>5.8 8.4 0</point>
+              <point>4.6 8.4 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物14的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>4.6 8.0 0</point>
+              <point>4.4 8.0 0</point>
+              <point>4.4 9.0 0</point>
+              <point>4.6 9.0 0</point>
+              <point>4.6 8.6 0</point>
+              <point>5.8 8.6 0</point>
+              <point>5.8 8.4 0</point>
+              <point>4.6 8.4 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs15">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物15的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>6.6 4.4 0</point>
+              <point>6.4 4.4 0</point>
+              <point>6.4 5.6 0</point>
+              <point>8.0 5.6 0</point>
+              <point>8.0 5.4 0</point>
+              <point>6.6 5.4 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物15的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>6.6 4.4 0</point>
+              <point>6.4 4.4 0</point>
+              <point>6.4 5.6 0</point>
+              <point>8.0 5.6 0</point>
+              <point>8.0 5.4 0</point>
+              <point>6.6 5.4 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+      
+      <link name="obs16">
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <!-- 障碍物16的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>5.2 5.6 0</point>
+              <point>5.2 6.4 0</point>
+              <point>5.4 6.4 0</point>
+              <point>5.4 5.6 0</point>
+            </polyline>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <!-- 障碍物16的多边形顶点坐标 -->
+              <height>0.5</height>
+              <point>5.2 5.6 0</point>
+              <point>5.2 6.4 0</point>
+              <point>5.4 6.4 0</point>
+              <point>5.4 5.6 0</point>
+            </polyline>
+          </geometry>
+        </visual>
+      </link>
+  </model>
+</sdf>
+
